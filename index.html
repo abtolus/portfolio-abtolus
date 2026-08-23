@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Personal portfolio website featuring parallax scrolling, custom slider components, and a fully responsive design.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Abtolus Morveth</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img width="32px" src="assets/images/favicon.svg" alt="The Abtolus Morveth logo">
+                <span>Abtolus Morveth</span>
+            </a>
+            <button class="nav__burger" id="nav-burger">
+                <span class="burger__layer burger__layer--top"></span>
+                <span class="burger__layer burger__layer--middle"></span>
+                <span class="burger__layer burger__layer--bottom"></span>
+            </button>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="nav__link">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="rellax home__background home__background-image-1" data-rellax-speed="-0.2"></div>
+            <div class="rellax home__background home__background-image-2" data-rellax-speed="-0.6"></div>
+            <div class="rellax home__background home__background-image-3" data-rellax-speed="-1.2"></div>
+            <div class="rellax home__background home__background-image-4" data-rellax-speed="-2.0"></div>
+
+            <div class="home__title-wrapper">
+                <div class="rellax home__title" data-rellax-speed="-1.4" data-rellax-desktop-speed="-0.4">
+                    <h3>Hi, I'm</h3>
+                    <h1>Abtolus Morveth</h1>
+                    <h3>working as</h3>
+                </div>
+            </div>
+            <div class="home__subtitle-wrapper">
+                <h3 class="rellax home__subtitle" data-rellax-speed="-0.9" data-rellax-desktop-speed="-0.4">working as
+                </h3>
+            </div>
+
+            <div class="home__typed-wrapper">
+                <h1 class="rellax home__typed" data-rellax-speed="-0.9" data-rellax-desktop-speed="-0.4">
+                    <span id="home-typed"></span>
+                </h1>
+            </div>
+
+            <div class="home__images-wrapper">
+                <div class="rellax home__images" id="home-images" data-rellax-speed="-0.4">
+                    <div class="home__box-1"></div>
+                    <div class="home__box-2"></div>
+                    <div class="home__box-3">
+                        <img src="assets/images/home__portrait.svg" alt="Digital professional portrait" class="home__image">
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" id="home-gesture"></a>
+        </section>
+        <section class="about section" id="about">
+            <h2 class="section__title">
+                <span>About</span> Me
+            </h2>
+            <div class="about__container container grid">
+                <article class="about__card">
+                    <div class="about__profession">
+                        <i class="about__icon ri-user-4-line"></i>
+                        <h2 class="about__title">Identity</h2>
+                    </div>
+                    <p class="about__content">
+                        <span>A</span>ncient <span>B</span>eing <span>T</span>hrough <span>O</span>bscure
+                        <span>L</span>ands <span>U</span>nveils <span>S</span>hadows, <span>M</span>astering
+                        <span>O</span>therworldly <span>R</span>eality, <span>V</span>enturing <span>E</span>ternity's
+                        <span>T</span>ranscedent <span>H</span>orizons.
+                    </p>
+                    <div class="blob-small"></div>
+                </article>
+                <article class="about__card">
+                    <div class="about__profession">
+                        <i class="about__icon ri-file-code-line"></i>
+                        <h2 class="about__title">Skills</h2>
+                    </div>
+                    <div class="about__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="about__list">
+                                    <li class="about__item">
+                                        <img src="assets/images/html.svg" alt="The HTML logo" class="about__image">
+                                        <span class="about__name">HTML</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/css.svg" alt="The CSS logo" class="about__image">
+                                        <span class="about__name">CSS</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/javascript.svg" alt="The JavaScript logo"
+                                            class="about__image">
+                                        <span class="about__name">JavaScript</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/python.svg" alt="The Python logo" class="about__image">
+                                        <span class="about__name">Python</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/postgres-sql.svg" alt="The PostgreSQL logo"
+                                            class="about__image">
+                                        <span class="about__name">PostgreSQL</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <ul class="about__list">
+                                    <li class="about__item">
+                                        <img src="assets/images/godot.svg" alt="The Godot logo" class="about__image">
+                                        <span class="about__name">Godot</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/pixilart.svg" alt="The Pixilart logo"
+                                            class="about__image">
+                                        <span class="about__name">Pixilart</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/inkscape.png" alt="The Inkscape logo"
+                                            class="about__image">
+                                        <span class="about__name">Inkscape</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/bandlab.png" alt="The BandLab logo"
+                                            class="about__image">
+                                        <span class="about__name">BandLab</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="blob-small"></div>
+                </article>
+                <article class="about__card">
+                    <div class="about__profession">
+                        <i class="about__icon ri-verified-badge-line"></i>
+                        <h2 class="about__title">Certificates</h2>
+                    </div>
+                    <div class="about__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="about__list">
+                                    <li class="about__item">
+                                        <img src="assets/images/freecodecamp.png" alt="The freeCodeCamp logo"
+                                            class="about__image">
+                                        <span class="about__name">Responsive Web Design</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/freecodecamp.png" alt="The freeCodeCamp logo"
+                                            class="about__image">
+                                        <span class="about__name">JavaScript</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/freecodecamp.png" alt="The freeCodeCamp logo"
+                                            class="about__image">
+                                        <span class="about__name">Python</span>
+                                    </li>
+                                    <li class="about__item">
+                                        <img src="assets/images/freecodecamp.png" alt="The freeCodeCamp logo"
+                                            class="about__image">
+                                        <span class="about__name">Relational Databases</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="blob-small"></div>
+                </article>
+            </div>
+        </section>
+        <section class="work section" id="work">
+            <h2 class="section__title">
+                Recent <span>Projects</span>
+            </h2>
+            <div class="work__container container grid">
+                <div class="work__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="work__card swiper-slide">
+                            <div class="work__header">
+                                <span class="work__number">01</span>
+                                <a href="#" target="_blank" class="work__link">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                            <h3 class="work__name">Portfolio Abtolus</h3>
+                            <p class="work__description">Personal portfolio website featuring parallax scrolling, custom
+                                slider components, and a fully responsive design.</p>
+
+                            <div class="work__skills">
+                                <img src="assets/images/html.svg" alt="The HTML logo" class="work__skill">
+                                <img src="assets/images/css.svg" alt="The CSS logo" class="work__skill">
+                                <img src="assets/images/javascript.svg" alt="The JavaScript logo" class="work__skill">
+                                <img src="assets/images/inkscape.png" alt="The Inkscape logo" class="work__skill">
+                            </div>
+                            <div class="work__footer">
+                                <p>Released on: <span> Lorem ipsum dolor</span></p>
+                                <p>Updated on: <span> Lorem ipsum dolor</span></p>
+                            </div>
+
+                            <div class="blob-big"></div>
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <div class="work__header">
+                                <span class="work__number">02</span>
+                                <a href="#" target="_blank" class="work__link">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                            <h3 class="work__name">ZayKwat Bot</h3>
+                            <p class="work__description">Telegram bot for real-time scraping of Myanmar currency
+                                exchanges, fuel prices, and gold prices from web sources.</p>
+
+                            <div class="work__skills">
+                                <img src="assets/images/python.svg" alt="The Python logo" class="work__skill">
+                            </div>
+                            <div class="work__footer">
+                                <p>Released on: <span> Lorem ipsum dolor</span></p>
+                                <p>Updated on: <span> Lorem ipsum dolor</span></p>
+                            </div>
+
+                            <div class="blob-big"></div>
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <div class="work__header">
+                                <span class="work__number">03</span>
+                                <a href="#" target="_blank" class="work__link">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                            <h3 class="work__name">Lorem ipsum</h3>
+                            <p class="work__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                                non semper risus. In ullamcorper libero et mollis maximus.</p>
+
+                            <div class="work__skills">
+                                <img src="assets/images/python.svg" alt="The Python logo" class="work__skill">
+                            </div>
+                            <div class="work__footer">
+                                <p>Released on: <span> Lorem ipsum dolor</span></p>
+                                <p>Updated on: <span> Lorem ipsum dolor</span></p>
+                            </div>
+
+                            <div class="blob-big"></div>
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <div class="work__header">
+                                <span class="work__number">04</span>
+                                <a href="#" target="_blank" class="work__link">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                            <h3 class="work__name">Lorem ipsum</h3>
+                            <p class="work__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                                non semper risus. In ullamcorper libero et mollis maximus.</p>
+
+                            <div class="work__skills">
+                                <img src="assets/images/godot.svg" alt="The Godot logo" class="work__skill">
+                            </div>
+                            <div class="work__footer">
+                                <p>Released on: <span> Lorem ipsum dolor</span></p>
+                                <p>Updated on: <span> Lorem ipsum dolor</span></p>
+                            </div>
+
+                            <div class="blob-big"></div>
+                        </article>
+
+                        <article class="work__card swiper-slide">
+                            <div class="work__header">
+                                <span class="work__number">05</span>
+                                <a href="#" target="_blank" class="work__link">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                            <h3 class="work__name">Lorem ipsum</h3>
+                            <p class="work__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                                non semper risus. In ullamcorper libero et mollis maximus.</p>
+
+                            <div class="work__skills">
+                                <img src="assets/images/godot.svg" alt="The Godot logo" class="work__skill">
+                            </div>
+                            <div class="work__footer">
+                                <p>Released on: <span> Lorem ipsum dolor</span></p>
+                                <p>Updated on: <span> Lorem ipsum dolor</span></p>
+                            </div>
+
+                            <div class="blob-big"></div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__title">
+                <img width="48px" src="assets/images/favicon.svg" alt="The Abtolus Morveth logo">
+                <h2>Abtolus Morveth</h2>
+            </div>
+
+            <div class="footer__links">
+                <a href="#home" class="footer__link">Home</a>
+                <a href="#about" class="footer__link">About</a>
+                <a href="#projects" class="footer__link">Projects</a>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://www.facebook.com/abtolus" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-circle-line"></i>
+                </a>
+
+                <a href="https://www.freecodecamp.org/abtolus" target="_blank" class="footer__social-link">
+                    <i class="ri-fire-line"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/abtolus-morveth/" target="_blank" class="footer__social-link">
+                    <i class="ri-linkedin-box-line"></i>
+                </a>
+
+                <a href="https://github.com/abtolus" target="_blank" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; 2026 Abtolus. All Rights Reserved.</span>
+
+        <div class="blob-big"></div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="rellax.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
